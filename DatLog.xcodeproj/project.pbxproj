@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		E94359101F455E1B00D49E0B /* DatLog.h in Headers */ = {isa = PBXBuildFile; fileRef = E943590E1F455E1B00D49E0B /* DatLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E94359171F455E4300D49E0B /* DatLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94359161F455E4300D49E0B /* DatLog.swift */; };
+		E94359191F455F1200D49E0B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94359181F455F1200D49E0B /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E943590B1F455E1B00D49E0B /* DatLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DatLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E943590E1F455E1B00D49E0B /* DatLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatLog.h; sourceTree = "<group>"; };
 		E943590F1F455E1B00D49E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E94359161F455E4300D49E0B /* DatLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatLog.swift; sourceTree = "<group>"; };
+		E94359181F455F1200D49E0B /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			children = (
 				E943590E1F455E1B00D49E0B /* DatLog.h */,
 				E943590F1F455E1B00D49E0B /* Info.plist */,
+				E94359161F455E4300D49E0B /* DatLog.swift */,
+				E94359181F455F1200D49E0B /* Configuration.swift */,
 			);
 			path = DatLog;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					E943590A1F455E1B00D49E0B = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E94359191F455F1200D49E0B /* Configuration.swift in Sources */,
+				E94359171F455E4300D49E0B /* DatLog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +250,7 @@
 		E94359141F455E1B00D49E0B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -252,6 +262,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = YoniKalangan.DatLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -259,6 +270,7 @@
 		E94359151F455E1B00D49E0B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
