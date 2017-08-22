@@ -10,6 +10,7 @@
 		E94359101F455E1B00D49E0B /* DatLog.h in Headers */ = {isa = PBXBuildFile; fileRef = E943590E1F455E1B00D49E0B /* DatLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E94359171F455E4300D49E0B /* DatLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94359161F455E4300D49E0B /* DatLog.swift */; };
 		E94359191F455F1200D49E0B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94359181F455F1200D49E0B /* Configuration.swift */; };
+		E99389DA1F4C4ED8001EE294 /* LogLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99389D91F4C4ED8001EE294 /* LogLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		E943590F1F455E1B00D49E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E94359161F455E4300D49E0B /* DatLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatLog.swift; sourceTree = "<group>"; };
 		E94359181F455F1200D49E0B /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		E99389D91F4C4ED8001EE294 /* LogLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 				E943590F1F455E1B00D49E0B /* Info.plist */,
 				E94359161F455E4300D49E0B /* DatLog.swift */,
 				E94359181F455F1200D49E0B /* Configuration.swift */,
+				E99389D91F4C4ED8001EE294 /* LogLine.swift */,
 			);
 			path = DatLog;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E94359191F455F1200D49E0B /* Configuration.swift in Sources */,
+				E99389DA1F4C4ED8001EE294 /* LogLine.swift in Sources */,
 				E94359171F455E4300D49E0B /* DatLog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +309,7 @@
 				E94359151F455E1B00D49E0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

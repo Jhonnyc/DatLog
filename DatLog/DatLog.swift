@@ -7,15 +7,19 @@
 //
 
 import Foundation
-
+import CoreData
 
 class DatLog {
 
     var config: Configuration;
     
     public init() {
-        config = Configuration.setup()
+        config = Configuration(printToLog: true)
     }
     
-    
+    public func e() {
+        if(config.isPrintToLogout()) {
+            print("problem", to: &TextOutputStream())
+        }
+    }
 }

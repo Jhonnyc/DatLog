@@ -9,10 +9,15 @@
 import Foundation
 
 class Configuration {
-    private var printToLogout: Bool?
     
-    class func setup() -> Configuration {
-        return Configuration()
+    private var printToLogout: Bool!
+    
+    public init(printToLog printToLogout: Bool) {
+        self.printToLogout = printToLogout
+    }
+    
+    public func isPrintToLogout() -> Bool! {
+        return self.printToLogout
     }
 
 }

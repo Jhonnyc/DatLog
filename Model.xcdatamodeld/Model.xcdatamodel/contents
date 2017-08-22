@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Key" representedClassName="Key" syncable="YES" codeGenerationType="class">
+        <relationship name="value" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Value" inverseName="key" inverseEntity="Value" syncable="YES"/>
+    </entity>
+    <entity name="Value" representedClassName="Value" syncable="YES" codeGenerationType="class">
+        <relationship name="key" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Key" inverseName="value" inverseEntity="Key" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Key" positionX="-4635" positionY="-1719" width="117" height="58"/>
+        <element name="Value" positionX="-4365" positionY="-1719" width="128" height="58"/>
+    </elements>
+</model>
