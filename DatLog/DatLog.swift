@@ -17,9 +17,9 @@ class DatLog {
         config = Configuration(printToLog: true)
     }
     
-    public func e() {
+    public func e(log line: LogLine) {
         if(config.isPrintToLogout()) {
-            print("problem", to: &TextOutputStream())
+            print(line)
         }
     }
 }
