@@ -10,6 +10,8 @@
 		E94359101F455E1B00D49E0B /* DatLog.h in Headers */ = {isa = PBXBuildFile; fileRef = E943590E1F455E1B00D49E0B /* DatLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E94359171F455E4300D49E0B /* DatLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94359161F455E4300D49E0B /* DatLog.swift */; };
 		E94359191F455F1200D49E0B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94359181F455F1200D49E0B /* Configuration.swift */; };
+		E975894E1F4EB9B80055A9E3 /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E975894D1F4EB9B80055A9E3 /* LogLevel.swift */; };
+		E97589501F4EBCA10055A9E3 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E975894F1F4EBCA10055A9E3 /* Logger.swift */; };
 		E99389DA1F4C4ED8001EE294 /* LogLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99389D91F4C4ED8001EE294 /* LogLine.swift */; };
 /* End PBXBuildFile section */
 
@@ -19,6 +21,8 @@
 		E943590F1F455E1B00D49E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E94359161F455E4300D49E0B /* DatLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatLog.swift; sourceTree = "<group>"; };
 		E94359181F455F1200D49E0B /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		E975894D1F4EB9B80055A9E3 /* LogLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogLevel.swift; sourceTree = "<group>"; };
+		E975894F1F4EBCA10055A9E3 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		E99389D91F4C4ED8001EE294 /* LogLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +61,8 @@
 				E94359161F455E4300D49E0B /* DatLog.swift */,
 				E94359181F455F1200D49E0B /* Configuration.swift */,
 				E99389D91F4C4ED8001EE294 /* LogLine.swift */,
+				E975894D1F4EB9B80055A9E3 /* LogLevel.swift */,
+				E975894F1F4EBCA10055A9E3 /* Logger.swift */,
 			);
 			path = DatLog;
 			sourceTree = "<group>";
@@ -141,9 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E97589501F4EBCA10055A9E3 /* Logger.swift in Sources */,
 				E94359191F455F1200D49E0B /* Configuration.swift in Sources */,
 				E99389DA1F4C4ED8001EE294 /* LogLine.swift in Sources */,
 				E94359171F455E4300D49E0B /* DatLog.swift in Sources */,
+				E975894E1F4EB9B80055A9E3 /* LogLevel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

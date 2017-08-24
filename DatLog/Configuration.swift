@@ -11,13 +11,23 @@ import Foundation
 class Configuration {
     
     private var printToLogout: Bool!
+    private var logLevels: [LogLevel]
     
-    public init(printToLog printToLogout: Bool) {
+    public init(printToLog printToLogout: Bool, allowedLogs logLevels: [LogLevel]) {
         self.printToLogout = printToLogout
+        self.logLevels = logLevels
+    }
+    
+    public func isPrintToLogout(logLevel allowedLog: LogLevel) -> Bool! {
+        return ( self.printToLogout && logLevels.contains(allowedLog) )
     }
     
     public func isPrintToLogout() -> Bool! {
         return self.printToLogout
+    }
+    
+    public func getAllowedLogs() -> [LogLevel] {
+        return self.logLevels
     }
 
 }
