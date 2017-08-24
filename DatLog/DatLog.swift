@@ -15,7 +15,7 @@ class DatLog {
     
     // Empty init will add every possible log level 
     // and will print to standard output
-    public init() {
+    public static func initialize() {
         DatLog.config = Configuration(printToLog: true,
                                allowedLogs: [.ASSERT, .DEBUG, .ERROR,
                                              .INFO, .VERBOSE, .WARN, .WTF])
@@ -23,7 +23,7 @@ class DatLog {
     
     // Initializing the class using a configuration class will make it use your
     // own custom configuration
-    public init(config configuration: Configuration) {
+    public static func initialize(config configuration: Configuration) {
         DatLog.config = configuration
     }
     
