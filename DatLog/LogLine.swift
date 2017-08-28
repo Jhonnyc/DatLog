@@ -10,18 +10,18 @@ import Foundation
 
 public class LogLine : CustomStringConvertible {
     
-    private var inClass: String
+    private var inClass: CustomStringConvertible
     private var inMethod: String
     private var error: String
     
-    public init(inClass clazz: String, inMethod method: String, withProblem error: String) {
+    public init(inClass clazz: CustomStringConvertible, inMethod method: String, withProblem error: String) {
         self.inClass = clazz
         self.inMethod = method
         self.error = error
     }
     
     public var description: String {
-        return inClass + " " + inMethod + " " + error
+        return inClass.description + " " + inMethod + " " + error
     }
     
 }
