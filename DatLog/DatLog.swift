@@ -33,65 +33,79 @@ class DatLog {
     }
     
     public static func assert(log line: LogLine) {
-        if(config.isPrintToLogout(logLevel: .ASSERT)) {
+        if(config.shouldBeLogged(logLevel: .ASSERT)) {
             for logger in loggers {
                 logger.assert(log: line)
             }
-            print(line)
+            if(config.isPrintToLogout()) {
+                print(line)
+            }
         }
     }
     
     public static func debug(log line: LogLine) {
-        if(config.isPrintToLogout(logLevel: .DEBUG)) {
+        if(config.shouldBeLogged(logLevel: .DEBUG)) {
             for logger in loggers {
                 logger.assert(log: line)
             }
-            print(line)
+            if(config.isPrintToLogout()) {
+                print(line)
+            }
         }
     }
     
     public static func error(log line: LogLine) {
-        if(config.isPrintToLogout(logLevel: .ERROR)) {
+        if(config.shouldBeLogged(logLevel: .ERROR)) {
             for logger in loggers {
                 logger.assert(log: line)
             }
-            print(line)
+            if(config.isPrintToLogout()) {
+                print(line)
+            }
         }
     }
     
     public static func info(log line: LogLine) {
-        if(config.isPrintToLogout(logLevel: .INFO)) {
+        if(config.shouldBeLogged(logLevel: .INFO)) {
             for logger in loggers {
                 logger.assert(log: line)
             }
-            print(line)
+            if(config.isPrintToLogout()) {
+                print(line)
+            }
         }
     }
     
     public static func verbose(log line: LogLine) {
-        if(config.isPrintToLogout(logLevel: .VERBOSE)) {
+        if(config.shouldBeLogged(logLevel: .VERBOSE)) {
             for logger in loggers {
                 logger.assert(log: line)
             }
-            print(line)
+            if(config.isPrintToLogout()) {
+                print(line)
+            }
         }
     }
     
     public static func warn(log line: LogLine) {
-        if(config.isPrintToLogout(logLevel: .WARN)) {
+        if(config.shouldBeLogged(logLevel: .WARN)) {
             for logger in loggers {
                 logger.assert(log: line)
             }
-            print(line)
+            if(config.isPrintToLogout()) {
+                print(line)
+            }
         }
     }
     
     public static func wtf(log line: LogLine) {
-        if(config.isPrintToLogout(logLevel: .WTF)) {
+        if(config.shouldBeLogged(logLevel: .WTF)) {
             for logger in loggers {
                 logger.assert(log: line)
             }
-            print(line)
+            if(config.isPrintToLogout()) {
+                print(line)
+            }
         }
     }
     
