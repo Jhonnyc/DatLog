@@ -19,11 +19,15 @@ class Configuration {
     }
     
     public func isPrintToLogout(logLevel allowedLog: LogLevel) -> Bool! {
-        return ( self.printToLogout && logLevels.contains(allowedLog) )
+        return ( self.printToLogout && self.shouldBeLogged(logLevel: allowedLog) )
     }
     
     public func isPrintToLogout() -> Bool! {
         return self.printToLogout
+    }
+    
+    public func shouldBeLogged(logLevel allowedLog: LogLevel) -> Bool! {
+        return logLevels.contains(allowedLog)
     }
     
     public func getAllowedLogs() -> [LogLevel] {
