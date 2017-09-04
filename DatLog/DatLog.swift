@@ -11,7 +11,8 @@ import CoreData
 
 class DatLog {
 
-    static var config: Configuration!
+    private static var config: Configuration!
+    private static var loggers = [Logger]()
     
     // Empty init will add every possible log level 
     // and will print to standard output
@@ -27,44 +28,69 @@ class DatLog {
         DatLog.config = configuration
     }
     
+    public static func addLogger(_ logger: Logger) {
+        loggers.append(logger)
+    }
+    
     public static func assert(log line: LogLine) {
         if(config.isPrintToLogout(logLevel: .ASSERT)) {
+            for logger in loggers {
+                logger.assert(log: line)
+            }
             print(line)
         }
     }
     
     public static func debug(log line: LogLine) {
         if(config.isPrintToLogout(logLevel: .DEBUG)) {
+            for logger in loggers {
+                logger.assert(log: line)
+            }
             print(line)
         }
     }
     
     public static func error(log line: LogLine) {
         if(config.isPrintToLogout(logLevel: .ERROR)) {
+            for logger in loggers {
+                logger.assert(log: line)
+            }
             print(line)
         }
     }
     
     public static func info(log line: LogLine) {
         if(config.isPrintToLogout(logLevel: .INFO)) {
+            for logger in loggers {
+                logger.assert(log: line)
+            }
             print(line)
         }
     }
     
     public static func verbose(log line: LogLine) {
         if(config.isPrintToLogout(logLevel: .VERBOSE)) {
+            for logger in loggers {
+                logger.assert(log: line)
+            }
             print(line)
         }
     }
     
     public static func warn(log line: LogLine) {
         if(config.isPrintToLogout(logLevel: .WARN)) {
+            for logger in loggers {
+                logger.assert(log: line)
+            }
             print(line)
         }
     }
     
     public static func wtf(log line: LogLine) {
         if(config.isPrintToLogout(logLevel: .WTF)) {
+            for logger in loggers {
+                logger.assert(log: line)
+            }
             print(line)
         }
     }
