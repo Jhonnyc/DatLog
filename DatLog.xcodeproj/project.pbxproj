@@ -14,6 +14,7 @@
 		E97589501F4EBCA10055A9E3 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E975894F1F4EBCA10055A9E3 /* Logger.swift */; };
 		E97589531F4EC9AD0055A9E3 /* cover.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E97589521F4EC9AD0055A9E3 /* cover.jpeg */; };
 		E99389DA1F4C4ED8001EE294 /* LogLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99389D91F4C4ED8001EE294 /* LogLine.swift */; };
+		E9E745861F8DCFA5005E72DF /* Todo.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E9E745851F8DCFA5005E72DF /* Todo.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E975894F1F4EBCA10055A9E3 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		E97589521F4EC9AD0055A9E3 /* cover.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cover.jpeg; sourceTree = "<group>"; };
 		E99389D91F4C4ED8001EE294 /* LogLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogLine.swift; sourceTree = "<group>"; };
+		E9E745851F8DCFA5005E72DF /* Todo.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Todo.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				E97589511F4EC98C0055A9E3 /* img */,
+				E9E745871F8DCFC5005E72DF /* Assets */,
 				E943590E1F455E1B00D49E0B /* DatLog.h */,
 				E943590F1F455E1B00D49E0B /* Info.plist */,
 				E94359161F455E4300D49E0B /* DatLog.swift */,
@@ -76,6 +79,14 @@
 				E97589521F4EC9AD0055A9E3 /* cover.jpeg */,
 			);
 			name = img;
+			sourceTree = "<group>";
+		};
+		E9E745871F8DCFC5005E72DF /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E9E745851F8DCFA5005E72DF /* Todo.rtf */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E745861F8DCFA5005E72DF /* Todo.rtf in Resources */,
 				E97589531F4EC9AD0055A9E3 /* cover.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
